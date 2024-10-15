@@ -4,10 +4,10 @@ function AdmissionForm(){
         <>
         
             <div className="flex justify-center items-center h-screen w-screen">
-                <div className="w-[35%] h-[97%] bg-yellow-50 border-black flex items-center justify-center rounded-md shadow-xl">
+                <div className="w-[35%] h-[850px] bg-yellow-50 border-black flex items-center justify-center rounded-md shadow-xl mt-40">
                 <form action="">
-                <div className="grid grid-cols-2 grid-rows-15 gap-3 w-[400px]">
-                    <h1 className="col-span-2 text-center text-xl font-semibold text-yellow-300">ADMISSION FORM</h1>
+                <div className="grid grid-cols-2 grid-rows-17 gap-3 w-[400px] h-[100%]">
+                    <h1 className="col-span-2 text-center text-xl font-semibold text-yellow-400">ADMISSION FORM</h1>
                     <label htmlFor="firstname" className="row-start-2">First Name</label>
                     <input type="text" placeholder="First Name" className=" hover:border-yellow-600 row-start-3 border-[1px] border-black rounded-md p-2"/>
                     <label htmlFor="lastname" className="row-start-2">Last Name</label>
@@ -27,7 +27,11 @@ function AdmissionForm(){
                     <input type="email" placeholder="Email" className=" hover:border-yellow-600 border-[1px] border-black rounded-md row-start-12 col-span-2 p-2"/>
                     <label htmlFor="parentname" className="row-start-13">Mother's First Name</label>
                     <input type="text" placeholder="Mother's First Name" className=" hover:border-yellow-600 border-[1px] border-black rounded-md row-start-14 col-span-2 p-2"/>
-                    <button className="col-span-2 border-[1px] border-black rounded-md h-10 bg-yellow-300 hover:bg-yellow-400">Submit</button>
+                    <label htmlFor="parentage" className="row-start-15 col-start-1">Parent's Age</label>
+                    <input type="number" placeholder="Age" className="border-[1px] border-black hover:border-yellow-600 rounded-md row-start-16 col-start-1 p-2 w-20"/>
+                    <label htmlFor="occupation" className="col-start-2 -mt-9">Parent's Occupation</label>
+                    <input type="text" placeholder="Occupation" className="border-[1px] border-black p-2 hover:border-yellow-600 rounded-md row-start-16 col-start-2 -mt-14 mb-4"/>
+                    <button className="col-span-2 border-[1px] border-black rounded-md h-10 bg-yellow-300 hover:bg-yellow-400 row-start-17">Submit</button>
                 </div>
                 </form>
                 </div>
