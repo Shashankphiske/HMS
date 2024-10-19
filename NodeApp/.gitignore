@@ -34,4 +34,4 @@ tmp/
 *.pid
 *.seed
 
-credentials.json
+credentials.json/
