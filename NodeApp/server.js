@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // Google API credentials
-const credentials = JSON.parse(fs.readFileSync('credentials.json'));
+const credentials = JSON.parse(fs.readFileSync('.env'));
 const auth = new google.auth.GoogleAuth({
   credentials,
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
