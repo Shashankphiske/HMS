@@ -33,3 +33,5 @@ tmp/
 *.log
 *.pid
 *.seed
+
+credentials.json/

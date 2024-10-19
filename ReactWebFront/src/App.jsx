@@ -1,16 +1,11 @@
 import "./index.css"
-import InquiryPage from "./components/InquiryPage";
-import AdmissionForm from "./components/AdmissionForm";
-import LeaveForm from "./components/LeaveForm";
-
+import ShashankRender from "./shashankrender";
 
 function App(){
   return (
     <div className="place-content-center">
 
-    <LeaveForm/>
-    <InquiryPage/>
-    <AdmissionForm/>
+    <ShashankRender/>
 
     </div>
   );
