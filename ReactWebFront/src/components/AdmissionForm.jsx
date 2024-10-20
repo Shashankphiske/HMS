@@ -51,71 +51,71 @@ function AdmissionForm() {
     return (
         <>
             <div className="flex justify-center items-center h-screen w-screen">
-                <div className="flex items-center justify-center rounded-lg shadow-xl w-[92%] bg-amber-50 lg:w-[35%]">
+                <div className="flex items-center justify-center rounded-lg shadow-xl w-[92%] bg-white border-[0.5px] border-black lg:w-[35%] mt-12">
                     <form method="post" onSubmit={handleSubmit} className="grid grid-cols-2 grid-rows-17 gap-2 w-[95%] p-2">
-                        <h1 className="col-span-2 text-center text-xl font-semibold text-yellow-400">ADMISSION FORM</h1>
+                        <h1 className="col-span-2 text-center text-xl font-semibold text-black">ADMISSION FORM</h1>
 
-                        <label htmlFor="firstname" className="row-start-2">First Name</label>
+                        <label htmlFor="firstname" className="row-start-2 text-lg pt-1">First Name</label>
                         <input
                             type="text"
                             name="firstname" // Added name attribute
                             placeholder="First Name"
                             value={admission.firstname}
                             onChange={handleInput}
-                            className="-ml-6 hover:border-yellow-600 row-start-2 col-start-2 border-[1px] border-black rounded-lg p-2"
+                            className="-ml-6 hover:border-yellow-400 row-start-2 col-start-2 border-[1px] border-black rounded-lg p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="lastname" className="row-start-3">Last Name</label>
+                        <label htmlFor="lastname" className="row-start-3 text-lg pt-1">Last Name</label>
                         <input
                             type="text"
                             name="lastname" // Added name attribute
                             placeholder="Last Name"
                             value={admission.lastname}
                             onChange={handleInput}
-                            className="-ml-6 hover:border-yellow-600 row-start-3 col-start-2 border-[1px] border-black rounded-lg p-2"
+                            className="-ml-6 hover:border-yellow-400 row-start-3 col-start-2 border-[1px] border-black rounded-lg p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="middlename">Middle Name</label>
+                        <label htmlFor="middlename" className="text-lg pt-1">Middle Name</label>
                         <input
                             type="text"
                             name="middlename" // Added name attribute and fixed typo
                             placeholder="Middle Name"
                             value={admission.middlename}
                             onChange={handleInput}
-                            className="-ml-6 hover:border-yellow-600 row-start-4 col-start-2 border-[1px] border-black rounded-lg p-2"
+                            className="-ml-6 hover:border-yellow-400 row-start-4 col-start-2 border-[1px] border-black rounded-lg p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="address" className="row-start-5">Address</label>
+                        <label htmlFor="address" className="row-start-5 text-lg pt-1">Address</label>
                         <input
                             type="text"
                             name="address" // Added name attribute
                             placeholder="Address"
                             value={admission.address}
                             onChange={handleInput}
-                            className=" hover:border-yellow-600 border-[1px] border-black rounded-lg row-start-6 col-span-2 p-2"
+                            className=" hover:border-yellow-400 border-[1px] border-black rounded-lg row-start-6 col-span-2 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="adhaarnumber" className="row-start-7">Adhaar Number</label>
+                        <label htmlFor="adhaarnumber" className="row-start-7 text-lg">Adhaar Number</label>
                         <input
                             type="number"
                             name="adhaarnumber" // Added name attribute
                             placeholder="Adhaar Number"
                             value={admission.adhaarnumber}
                             onChange={handleInput}
-                            className=" hover:border-yellow-600 border-[1px] border-black rounded-lg row-start-8 col-span-2 p-2"
+                            className=" hover:border-yellow-400 border-[1px] border-black rounded-lg row-start-8 col-span-2 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="age" className="row-start-9 col-start-1">Age</label>
+                        <label htmlFor="age" className="row-start-9 col-start-1 text-lg">Age</label>
                         <input
                             type="number"
                             name="age" // Added name attribute
                             placeholder="Age"
                             value={admission.age}
                             onChange={handleInput}
-                            className=" hover:border-yellow-600 border-[1px] border-black rounded-lg row-start-10 col-start-1 w-20 p-2"
+                            className=" hover:border-yellow-400 border-[1px] border-black rounded-lg row-start-10 col-start-1 w-20 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="contactnumber" className="row-start-9 col-start-2">Contact Number</label>
+                        <label htmlFor="contactnumber" className="row-start-9 col-start-2 text-lg">Contact Number</label>
                         <h2 className="col-start-2 row-start-10 -ml-8 mt-2">+91</h2>
                         <input
                             type="number"
@@ -123,47 +123,47 @@ function AdmissionForm() {
                             placeholder="Contact Number"
                             value={admission.contactnumber}
                             onChange={handleInput}
-                            className="border-black border-[1px]  hover:border-yellow-600 rounded-lg row-start-10 col-start-2 p-2"
+                            className="border-black border-[1px]  hover:border-yellow-400 rounded-lg row-start-10 col-start-2 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="email" className="row-start-11">Email</label>
+                        <label htmlFor="email" className="row-start-11 text-lg">Email</label>
                         <input
                             type="email"
                             name="email" // Added name attribute
                             placeholder="Email"
                             value={admission.email}
                             onChange={handleInput}
-                            className=" hover:border-yellow-600 border-[1px] border-black rounded-lg row-start-12 col-span-2 p-2"
+                            className=" hover:border-yellow-400 border-[1px] border-black rounded-lg row-start-12 col-span-2 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="parentfirstname" className="row-start-13">Parent's First Name</label>
+                        <label htmlFor="parentfirstname" className="row-start-13 text-lg">Parent's First Name</label>
                         <input
                             type="text"
                             name="parentfirstname" // Added name attribute
                             placeholder="Parent's First Name"
                             value={admission.parentfirstname}
                             onChange={handleInput}
-                            className=" hover:border-yellow-600 border-[1px] border-black rounded-lg row-start-14 col-span-2 p-2"
+                            className=" hover:border-yellow-400 border-[1px] border-black rounded-lg row-start-14 col-span-2 p-2 bg-amber-50"
                         />
 
-                        <label htmlFor="parentage" className="row-start-15 col-start-1">Parent's Age</label>
+                        <label htmlFor="parentage" className="row-start-15 col-start-1 text-lg">Parent's Age</label>
                         <input
                             type="number"
                             name="parentage" // Added name attribute
                             placeholder="Age"
                             value={admission.parentage}
                             onChange={handleInput}
-                            className="border-[1px] border-black hover:border-yellow-600 rounded-lg row-start-16 col-start-1 p-2 w-20"
+                            className="border-[1px] border-black hover:border-yellow-400 rounded-lg row-start-16 col-start-1 p-2 w-20 bg-amber-50"
                         />
 
-                        <label htmlFor="parentoccupation" className="col-start-2 -mt-9">Parent's Occupation</label>
+                        <label htmlFor="parentoccupation" className="col-start-2 -mt-9 text-lg">Parent's Occupation</label>
                         <input
                             type="text"
                             name="parentoccupation" // Added name attribute
                             placeholder="Occupation"
                             value={admission.parentoccupation}
                             onChange={handleInput}
-                            className="border-[1px] border-black p-2 hover:border-yellow-600 rounded-lg row-start-16 col-start-2 -mt-14 mb-4"
+                            className="border-[1px] border-black p-2 hover:border-yellow-400 rounded-lg row-start-16 col-start-2 -mt-14 mb-4 bg-amber-50"
                         />
 
                         <button className="col-span-2 border-[1px] border-black rounded-lg h-10 bg-yellow-300 hover:bg-yellow-400 row-start-17">Submit</button>
