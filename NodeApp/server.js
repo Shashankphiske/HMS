@@ -8,6 +8,8 @@ const { METHODS } = require('http');
 // Initialize the Express app
 const app = express();
 
+require('dotenv').config()
+
 app.use(express.json());
 
 const corsOptions = {
@@ -16,13 +18,11 @@ const corsOptions = {
   credentials: true,
 }
 app.use(cors(corsOptions));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 // Google API credentials
-const credentials = JSON.parse(fs.readFileSync('.env'));
+const credentials = JSON.parse(fs.readFileSync(process.env.GOOGLE_APP_CREDENTIALS));
 const auth = new google.auth.GoogleAuth({
   credentials,
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],

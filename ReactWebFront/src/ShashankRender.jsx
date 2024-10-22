@@ -6,7 +6,7 @@ function ShashankRender(){
 
     return(
         <>
-            <AdmissionForm/>
+            <LeaveForm/>
         </>
     );
 }

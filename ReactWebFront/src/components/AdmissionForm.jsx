@@ -51,7 +51,7 @@ function AdmissionForm() {
     return (
         <>
             <div className="flex justify-center items-center h-screen w-screen">
-                <div className="flex items-center justify-center rounded-lg shadow-xl w-[92%] bg-white border-[0.5px] border-black lg:w-[35%] mt-12">
+                <div className="flex items-center justify-center rounded-lg shadow-xl w-[92%] border-[0.5px] border-black lg:w-[35%] mt-12">
                     <form method="post" onSubmit={handleSubmit} className="grid grid-cols-2 grid-rows-17 gap-2 w-[95%] p-2">
                         <h1 className="col-span-2 text-center text-xl font-semibold text-black">ADMISSION FORM</h1>
 
@@ -166,7 +166,7 @@ function AdmissionForm() {
                             className="border-[1px] border-black p-2 hover:border-yellow-400 rounded-lg row-start-16 col-start-2 -mt-14 mb-4 bg-amber-50"
                         />
 
-                        <button className="col-span-2 border-[1px] border-black rounded-lg h-10 bg-yellow-300 hover:bg-yellow-400 row-start-17">Submit</button>
+                        <button className="col-span-2 border-[1px] border-black rounded-lg h-10 bg-yellow-300 hover:bg-yellow-400 row-start-17 shadow-2xl shadow-black">Submit</button>
                     </form>
                 </div>
             </div>
