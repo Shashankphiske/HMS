@@ -1,31 +1,19 @@
-<<<<<<< HEAD
-import React from 'react'
-import Navbar from './Components/Navbar'
-
-const App = () => {
-  return (
-    <div>
-     <Navbar />
-    </div>
-  )
-=======
 import "./index.css"
-import InquiryPage from "./components/InquiryPage";
-import AdmissionForm from "./components/AdmissionForm";
-import LeaveForm from "./components/LeaveForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Sanjyot from "./Components/Sanjyot";
+
 
 
 function App(){
   return (
     <div className="place-content-center">
-
-    <LeaveForm/>
-    <InquiryPage/>
-    <AdmissionForm/>
+    
+    <Sanjyot />
 
     </div>
   );
->>>>>>> f4c26eccb538ec4f7fe8a9005cb849e9de3c5468
+
 }
 
 export default App;
