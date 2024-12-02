@@ -16,11 +16,7 @@ export default {
       },
     },
   },
-<<<<<<< HEAD
   plugins: [
     require('flowbite/plugin') // Add the flowbite plugin
   ],
-=======
-  plugins: [],
->>>>>>> 6b2260df002b2b354243293596db52d3c95be11e
-}
+} 

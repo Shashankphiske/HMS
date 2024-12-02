@@ -1,4 +1,4 @@
-
+import "../index.css"
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,6 +7,9 @@ import HostelHeading from "./HostelHeading";
 import VideoSection from "./VideoSection";
 import RoomInfoSection from "./RoomInfoSection";
 import Map from "./Map";
+import MidSection from "./MidSection";
+import OwnerInfo from "./OwnerInfo";
+import FormSection from "./FormSection";
 
 
 function Sanjyot(){
@@ -21,7 +24,9 @@ function Sanjyot(){
     <hr className="md:hidden"/>
     <RoomInfoSection />
     <Map />
-    
+    <MidSection />
+    <OwnerInfo />
+    <FormSection />
 
     </div>
   );
