@@ -12,12 +12,14 @@
   "dependencies": {
     "@headlessui/react": "^2.1.10",
     "@heroicons/react": "^2.1.5",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "flowbite": "^2.5.2",
     "flowbite-react": "^0.10.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1",
     "react-scripts": "^5.0.1",
     "reactwebfront": "file:"
   },
@@ -33,7 +35,8 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
+    "sass": "^1.80.3",
+    "tailwindcss": "^3.4.14",
     "vite": "^5.4.8"
   }
 }

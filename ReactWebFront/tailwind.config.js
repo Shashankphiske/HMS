@@ -13,14 +13,29 @@ export default {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(0deg, rgba(215,222,92,1) 19%, rgba(255,255,255,1) 87%)',
+        'custom-bg': "url('./assets/images/backImage.jpg')",
       },
+
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+      'ssm' : '300px',
+    }
   },
-<<<<<<< HEAD
   plugins: [
     require('flowbite/plugin') // Add the flowbite plugin
   ],
-=======
-  plugins: [],
->>>>>>> 6b2260df002b2b354243293596db52d3c95be11e
 }

@@ -48,11 +48,11 @@ function InquiryPage(){
 
     return (
         <>
-        <div className="w-screen h-screen flex justify-center items-center">
+        <div className="w-screen h-10/12 flex justify-center items-center md:mt-28">
             <div className="rounded-lg bg-amber-50 grid grid-cols-1 gap-3 items-center shadow-xl shadow-slate-300 w-[95%] lg:w-[35%]">
             
             <form method="post" onSubmit={handleSubmit} className="grid grid-cols-2 grid-rows-12 gap-2 -ml-24 mb-5 w-[95%] ml-3">
-            <h1 className="col-span-2 text-3xl font-sans text-yellow-300 font-semibold mt-4">INQUIRY FORM</h1>
+            <h1 className="col-span-2 text-3xl font-sans text-yellow-300 font-semibold mt-4">CONTACT FORM</h1>
 
             <label htmlFor="firstname" className=" col-start-1 col-end-2 py-2 text-lg">First Name</label>
             <input type="text" placeholder="First Name" value={inquiry.firstname} onChange={handleInput} name="firstname" className=" border-black border-[1px] rounded-lg row-start-3 p-2 hover:border-yellow-400"/>
