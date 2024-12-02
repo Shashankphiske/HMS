@@ -7,22 +7,23 @@ import HostelHeading from "./HostelHeading";
 import VideoSection from "./VideoSection";
 import RoomInfoSection from "./RoomInfoSection";
 import Map from "./Map";
-
+import FrontWelcome from "./FrontWelcome";
+import Footer from "./Footer";
 
 function Sanjyot(){
   return (
     <div className="place-content-center">
     
     <Navbar />
-    <Hero />
+    <FrontWelcome/>
     <HostelHeading />
     <hr className="md:hidden"/>
     <VideoSection />
     <hr className="md:hidden"/>
     <RoomInfoSection />
+    <Hero/>
     <Map />
-    
-
+    <Footer/>
     </div>
   );
 
