@@ -1,4 +1,4 @@
-import stayhome from "../assets/images/stayhome.png";
+import stayhome from "/images/stayhome.png";
 
 function Services(){
     return <div className="w-11/12 h-screen bg-orange-50 rounded-xl shadow-xl grid grid-cols-2 grid-rows-2 gap-3">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import img1 from '../assets/images/Hero1.png';
-import img2 from '../assets/images/Hero2.png';
-import img3 from '../assets/images/Hero3.png';
+import img1 from '/images/Hero1.png';
+import img2 from '/images/Hero2.png';
+import img3 from '/images/Hero3.png';
 
 function FrontWelcome() {
     const images = [img1, img2, img3];

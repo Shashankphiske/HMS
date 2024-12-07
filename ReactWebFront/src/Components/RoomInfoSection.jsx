@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/images/Hero1.png'
+import img from '/images/Hero1.png'
 
 function RoomInfoSection() {
   return (

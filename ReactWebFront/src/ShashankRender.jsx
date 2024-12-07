@@ -4,7 +4,7 @@ import InquiryPage from "./components/InquiryPage";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
-import backImage from "./assets/images/backImage.jpg";
+import backImage from "/images/backImage.jpg";
 import VideoSection from "./components/VideoSection";
 import Footer from "./components/Footer";
 import Map from "./components/Map";

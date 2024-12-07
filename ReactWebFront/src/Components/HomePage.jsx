@@ -1,4 +1,4 @@
-import hostelfront from "../assets/images/3711.png"
+import hostelfront from "/images/3711.png"
 import Inquirybutton from "./Inquirybutton";
 
 function HomePage(){
