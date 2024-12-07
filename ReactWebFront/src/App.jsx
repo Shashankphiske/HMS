@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Aboutus from "./components/Aboutus";
 import InquiryPage from "./components/InquiryPage";
+import NewHome from "./components/new/newHome";
 
 
 function App(){
@@ -13,7 +14,7 @@ function App(){
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<ShashankRender />}/>
+            <Route path="/" element={<NewHome />}/>
             <Route path="/about-us" element={<Aboutus />}/>
             <Route path="/inquiry-form" element={<InquiryPage />}/>
           </Routes>

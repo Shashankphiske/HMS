@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../assets/images/image7.png";
+import img from "/images/image7.png";
 import InquiryPage from "./InquiryPage";
 
 function Map() {
