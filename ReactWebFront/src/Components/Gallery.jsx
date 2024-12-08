@@ -9,8 +9,8 @@ const Images =(props)=>{
 
 function Gallery() {
   return (
-    <div className='h-screen  mt-[200px] bg-sky-100 w-full rounded-t-[50px] p-5 '>
-      <h1 className='font-serif text-7xl mt-[100px] flex justify-start'>Gallery</h1>
+    <div className=' mt-[200px] bg-orange-50 w-full rounded'>
+      <h1 className='font-serif text-7xl mt-[100px] md:mt-12 flex justify-start md:ml-16'>Gallery</h1>
       
       <div className=' gap-4 mt-8 flex-wrap p-5 flex justify-center items-center '>
             <Images/>
