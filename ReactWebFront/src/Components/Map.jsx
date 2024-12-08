@@ -1,11 +1,11 @@
 import React from 'react';
 import img from "/images/image7.png";
-import InquiryPage from "./InquiryPage";
+// import InquiryPage from "./InquiryPage";
 
 function Map() {
   return (
     <>
-    <div className='font-serif  bg-blue-50 w-full lg:h-[520px] md:grid md:grid-cols-2 md:grid-rows-2 rounded-xl'>
+    <div className='font-serif  bg-orange-100 w-full lg:h-[520px] md:grid md:grid-cols-2 md:grid-rows-2 rounded-xl'>
        <div className='md:col-start-1 md:row-start-1'>
           <img className='rounded-2xl md:h-[400px] md:mt-14 md:ml-14' src={img} alt="" />
        </div>

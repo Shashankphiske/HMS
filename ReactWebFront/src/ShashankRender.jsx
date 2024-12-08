@@ -10,13 +10,15 @@ import Footer from "./components/Footer";
 import Map from "./components/Map";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Reviews from "./components/Reviews";
+import Gallery from "./Components/Gallery";
 
 function ShashankRender(){
 
     return(
         <>
-        <div className="flex items-center justify-center flex-col gap-3  bg-cover bg-center min-h-screen">
+        <div className="flex items-center justify-center flex-col  bg-cover bg-center min-h-screen">
             <NewHome />
+            <Gallery />
             <Services />
             <Map />
             <VideoSection />
