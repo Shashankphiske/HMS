@@ -12,19 +12,19 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="font-serif w-full lg:h-screen md:pb-10 md:h-[400px] lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
+    <div className="font-serif w-full lg:h-screen ml-40 md:ml-0 pb-10 pt-5 md:pb-10 md:h-[400px] lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
       <div 
         className="col-start-2 justify-items-center row-start-1 md:mr-14"
         data-aos="fade-up"
       >
         <h2 
-          className="lg:text-6xl text-2xl md:mr-28 md:text-4xl text-sky-800 mt-2 lg:pt-12 md:mt-4"
+          className="lg:text-6xl text-4xl md:mr-28 md:text-4xl text-amber-950 mt-2 lg:pt-12 md:mt-4"
           data-aos="fade-up"
         >
           Services
         </h2>
         <div 
-          className="lg:text-3xl text-sm md:text-md mt-2 ml-3 lg:pt-12 md:mt-10 w-11/12 md:w-5/6 lg:w-11/12 space-y-4"
+          className="lg:text-3xl text-xl md:text-md mt-2 ml-10 md:ml-0 lg:pt-12 md:mt-10 w-11/12 md:w-5/6 lg:w-11/12 space-y-4"
           data-aos="fade-left"
         >
           <p>Single, double, and shared rooms with detailed descriptions.</p>

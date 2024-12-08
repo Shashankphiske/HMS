@@ -8,7 +8,7 @@ const Images = (props) => {
   return (
     <div className="relative overflow-hidden rounded-xl"> {/* Apply rounded corners to the container */}
       <img
-        className=" rounded-t-[50px] h-[400px] w-[350px] object-cover transition-transform duration-300 ease-in-out hover:scale-110"
+        className="rounded-t-[50px] h-[400px] w-[350px] object-cover transition-transform duration-300 ease-in-out hover:scale-110"
         src={props.img}
         alt=""
       />
@@ -19,8 +19,8 @@ const Images = (props) => {
 function Gallery() {
   return (
 
-    <div className="h-[230vh] mt-[200px] ml-40 bg-orange-50 w-full p-5">
-      <h1 className="font-serif text-7xl mt-[100px] flex justify-start">Gallery</h1>
+    <div className="h-[210vh] lg:h-screen md:ml-0 mt-[200px] ml-40 bg-orange-50 w-full p-5">
+      <h1 className="font-serif text-6xl ml-10 text-amber-950 mt-5 flex justify-start">Gallery</h1>
       <div className="gap-4 mt-8 flex-wrap p-5 flex justify-center items-center">
         <Images img={img1} />
         <Images img={img2} />
