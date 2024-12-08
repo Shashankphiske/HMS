@@ -20,6 +20,7 @@ function ShashankRender(){
             <Services />
             <Map />
             <VideoSection />
+            <Footer />
         </div>
         </>
     );

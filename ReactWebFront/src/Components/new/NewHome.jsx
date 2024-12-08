@@ -6,19 +6,14 @@ import friendshostel from "/images/friendshostel.jpg";
 function NewHome() {
     return (
         <>
-            <div className="w-full md:h-4/6 bg-sky-50 grid lg:grid-cols-2 pb-20 lg:mt-0 md:mt-0 mt-20">
+            <div className=" font-serif w-full md:h-4/6 bg-sky-50 grid lg:grid-cols-2 pb-20 lg:mt-0 md:mt-0 mt-20">
 
                 <div className="col-start-1 md:mt-40 mt-12 justify-items-center">
-                    <h1 className="text-sky-800 lg:text-7xl text-5xl md:text-7xl animate-slideUpLeft">ATMA MALIK</h1>
-                    <h2 className="text-black lg:text-7xl text-5xl md:text-7xl animate-slideUpRight">GIRLS HOSTEL</h2>
+                    <h1 className="font-serif text-sky-800 lg:text-7xl text-5xl md:text-7xl animate-slideUpLeft">ATMA MALIK</h1>
+                    <h2 className="font-serif text-black lg:text-7xl text-5xl md:text-7xl animate-slideUpRight">GIRLS HOSTEL</h2>
 
-                    <div className="lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
+                    <div className="font-serif   lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
                         <p>Welcome to <span className="text-sky-800">Atma Malik Girls Hostel</span>, where comfort meets affordability for students.</p>
-                    <h1 className="font-serif text-sky-800 lg:text-8xl text-5xl md:text-7xl animate-slideUpLeft ">NAME</h1>
-                    <h2 className="font-serif text-black lg:text-8xl text-5xl md:text-7xl animate-slideUpRight">HOSTEL</h2>
-
-                    <div className="font-serif lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
-                        <p>Welcome to [Your Hostel Name], where comfort meets affordability for students.</>
                         <br />
                         <p>Experience the perfect blend of community, convenience, and comfort.</p>
                     </div>
