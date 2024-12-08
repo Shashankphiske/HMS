@@ -23,7 +23,7 @@ function NewHome() {
                     className="lg:hidden hidden md:block"/>
                 </div>
 
-                <div className="md:hidden hidden lg:block lg:col-start-2 justify-items-center lg:mt-24 lg:rounded-xl">
+                <div className="md:hidden hidden lg:block lg:col-start-2 justify-items-center lg:mt-16 lg:rounded-xl">
                     <img 
                     src={homepageroom} alt="Hostel Bedroom" 
                     className="lg:w-5/6 hiddden mt-10 rounded-xl shadow-xl md:hidden lg:block"/>
