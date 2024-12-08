@@ -58,7 +58,7 @@ function Footer() {
                 </div>
             </div>
             <div className="bg-white text-gray-500 copywrite flex w-full justify-center">
-                <h1 className="font-bold text-xl">© 2024 Company, Inc</h1>
+                <h1 className="text-xl">© 2024 Company, Inc</h1>
             </div>
         </>
     );

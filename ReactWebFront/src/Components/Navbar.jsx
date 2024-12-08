@@ -14,10 +14,9 @@ const Navbar = () => {
         </Link>
 
         <div className="navOptions ssm:hidden md:flex items-center md:gap-10 md:px-10">
-          <button className="gallery hover:border-gray-500 hidden md:block lg:block border-2 p-2 px-3 rounded-xl flex items-center">GALLERY</button>
-          <button className="facilities hover:border-gray-500 hidden md:block lg:block border-2 p-2 px-3 rounded-xl flex items-center">FACILITIES</button>
-          <Link to='/about-us' className="aboutUs hover:border-gray-500 hidden md:block lg:block border-2 p-2 px-3 rounded-xl flex items-center md:mr-40">ABOUT US</Link>
-          <Link to='/login' className="loginLogo hover:border-gray-500 border-2 p-2 px-4 rounded-xl hidden md:block lg:block flex items-center">LOGIN</Link>
+          <button className="facilities transition-colors duration-300 ease-in-out border-gray-700 hover:border-white hover:bg-black hover:text-white  hidden md:block lg:block border-2 p-2 px-3 rounded-xl flex items-center">FACILITIES</button>
+          <Link to='/about-us' className="aboutUs transition-colors duration-300 ease-in-out border-gray-700 hover:border-white hover:bg-black hover:text-white  hidden md:block lg:block border-2 p-2 px-3 rounded-xl flex items-center ">ABOUT US</Link>
+          <Link to='/login' className="loginLogo transition-colors duration-300 ease-in-out border-gray-700 hover:border-white hover:bg-black hover:text-white  border-2 p-2 px-4 rounded-xl hidden md:block lg:block flex items-center">LOGIN</Link>
         </div>
 
         <div className="menu md:hidden">
