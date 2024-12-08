@@ -52,6 +52,9 @@ export default {
         'custom-gradient': 'linear-gradient(0deg, rgba(215,222,92,1) 19%, rgba(255,255,255,1) 87%)',
         'custom-bg': "url('./assets/images/backImage.jpg')",
       },
+      fontFamily:{
+        title:["Playwrite Magyarország","sans-serif"]
+      }
     },
   },
   plugins: [
