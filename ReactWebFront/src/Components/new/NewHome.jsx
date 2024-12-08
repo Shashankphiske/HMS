@@ -41,7 +41,10 @@ function NewHome() {
 
 
                 {/* <div className="md:hidden hidden lg:block lg:col-start-2 justify-items-center lg:mt-24 lg:rounded-xl">
+
                     <img 
+
+                <img 
                     src={homepageroom} alt="Hostel Bedroom" 
                     className="lg:w-5/6 hiddden mt-10 rounded-xl shadow-xl md:hidden lg:block"/>
                 </div> */}
