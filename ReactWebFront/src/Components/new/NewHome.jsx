@@ -14,11 +14,6 @@ function NewHome() {
 
                     <div className="lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
                         <p>Welcome to <span className="text-sky-800">Atma Malik Girls Hostel</span>, where comfort meets affordability for students.</p>
-                    <h1 className="font-serif text-sky-800 lg:text-8xl text-5xl md:text-7xl animate-slideUpLeft ">NAME</h1>
-                    <h2 className="font-serif text-black lg:text-8xl text-5xl md:text-7xl animate-slideUpRight">HOSTEL</h2>
-
-                    <div className="font-serif lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
-                        <p>Welcome to [Your Hostel Name], where comfort meets affordability for students.</>
                         <br />
                         <p>Experience the perfect blend of community, convenience, and comfort.</p>
                     </div>
