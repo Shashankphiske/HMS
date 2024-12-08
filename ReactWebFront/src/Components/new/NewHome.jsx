@@ -12,9 +12,9 @@ function NewHome() {
                     <h2 className="text-black lg:text-7xl text-5xl md:text-7xl animate-slideUpRight">GIRLS HOSTEL</h2>
 
                     <div className="lg:text-3xl text-xl md:text-2xl ml-5 mt-5 lg:pt-16 md:-mb-20 justify-items-center lg:justify-items-start md:justify-items-start md:mt-20 md:ml-20 w-4/5 animate-fadeIn">
-                        <p>Welcome to [Your Hostel Name], where comfort meets affordability for students.</p>
+                        <p>Welcome to <span className="text-sky-800">Atma Malik Girls Hostel</span>, where comfort meets affordability for students.</p>
                         <br />
-                        <p>Experience the perfect blend of community, convenience, and comfort at [Your Hostel Name].</p>
+                        <p>Experience the perfect blend of community, convenience, and comfort.</p>
                     </div>
                 </div>
                 <div className="lg:hidden hidden md:mt-40 md:-mb-20 md:block">

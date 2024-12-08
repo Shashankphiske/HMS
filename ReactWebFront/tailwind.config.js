@@ -23,12 +23,12 @@ export default {
         slideUpLeft: {
           '0%': { transform: 'translateY(50%)', opacity: '0' },
           '50%': { transform: 'translateY(0)', opacity: '1' },
-          '100%': { transform: 'translateY(0) translateX(-30%)', opacity: '1' },
+          '100%': { transform: 'translateY(0) translateX(-20%)', opacity: '1' },
         },
         slideUpRight: {
           '0%': { transform: 'translateY(50%)', opacity: '0' },
           '50%': { transform: 'translateY(0)', opacity: '1' },
-          '100%': { transform: 'translateY(0) translateX(35%)', opacity: '1' },
+          '100%': { transform: 'translateY(0) translateX(20%)', opacity: '1' },
         },
         popOutZoom: {
           '0%': { transform: 'scale(1)', opacity: '1' },

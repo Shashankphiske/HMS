@@ -19,6 +19,7 @@ function ShashankRender(){
             <NewHome />
             <Services />
             <Map />
+            <VideoSection />
         </div>
         </>
     );
