@@ -1,9 +1,9 @@
 import LeaveForm from "./components/LeaveForm";
+import Services from "./components/new/Services";
+import NewHome from "./components/new/newHome";
 import AdmissionForm from "./components/AdmissionForm";
 import InquiryPage from "./components/InquiryPage";
-import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
 import backImage from "/images/backImage.jpg";
 import VideoSection from "./components/VideoSection";
 import Footer from "./components/Footer";
@@ -16,12 +16,9 @@ function ShashankRender(){
     return(
         <>
         <div className="flex items-center justify-center flex-col gap-3  bg-cover bg-center min-h-screen">
-            <HomePage />
+            <NewHome />
             <Services />
-            <VideoSection />
-            <Reviews />
             <Map />
-            <Footer />
         </div>
         </>
     );
