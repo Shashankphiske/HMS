@@ -16,7 +16,7 @@ function ShashankRender(){
 
     return(
         <>
-        <div className="flex items-center justify-center flex-col  bg-cover bg-center min-h-screen">
+        <div className="flex md:justify-center justify-items-center flex-col">
             <NewHome />
             <Gallery />
             <Services />
