@@ -1,6 +1,6 @@
 function Footer(){
     return <>
-        <div className="flex items-center justify-center h-[300px] bg-stone-700 w-11/12 rounded-xl">
+        <div className=" font-serif flex items-center justify-center h-[300px] bg-black w-full ">
         <div className="grid grid-cols-3 gap-40 ml-28 text-white">
             <div className="col-start-1 grid grid-rows-3 gap-3">
                 <h1 className="text-xl">Contact Details :</h1>
