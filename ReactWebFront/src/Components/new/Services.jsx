@@ -12,13 +12,13 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="font-serif w-full lg:h-screen lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
+    <div className="font-serif w-full lg:h-screen md:pb-10 md:h-[400px] lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
       <div 
-        className="col-start-2 justify-items-center row-start-1"
+        className="col-start-2 justify-items-center row-start-1 md:mr-14"
         data-aos="fade-up"
       >
         <h2 
-          className="lg:text-6xl text-2xl md:text-4xl text-sky-800 mt-2 lg:pt-12 md:mt-4"
+          className="lg:text-6xl text-2xl md:mr-28 md:text-4xl text-sky-800 mt-2 lg:pt-12 md:mt-4"
           data-aos="fade-up"
         >
           Services
