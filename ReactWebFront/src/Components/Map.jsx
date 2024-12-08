@@ -5,13 +5,13 @@ import img from "/images/image7.png";
 function Map() {
   return (
     <>
-    <div className='font-serif  bg-orange-50 w-full md:h-[530px] lg:h-[520px] md:grid md:grid-cols-2 md:grid-rows-2 rounded-xl'>
+    <div className='font-serif ml-40 md:ml-0 bg-orange-50 w-full md:h-[530px] lg:h-[520px] md:grid md:grid-cols-2 md:grid-rows-2 rounded-xl'>
        <div className='md:col-start-1 md:row-start-1'>
-          <img className='rounded-2xl md:h-[400px] md:mt-14 md:ml-14' src={img} alt="" />
+          <img className='rounded-2xl p-3 ml-1 md:h-[400px] md:mt-14 md:ml-14' src={img} alt="" />
        </div>
-       <div className='md:col-start-2 row-start-1 flex flex-col justify-items-center md:mt-16 md:ml-20'>
-          <h1 className='lg:text-5xl md:text-3xl md:mr-16'>Ease Of Access</h1>
-          <div className='text-xl lg:mt-14 md:mt-2 w-10/12 md:text-lg'>
+       <div className='md:col-start-2 w-screen ml-44 row-start-1 flex flex-col justify-items-center md:mt-16 md:ml-20'>
+          <h1 className='lg:text-5xl md:text-3xl text-3xl text-amber-950 md:mr-16'>Ease Of Access</h1>
+          <div className='text-xl lg:mt-14 md:mt-2 mt-3 md:text-lg'>
           <p>Our hostel is ideally located for convenience and accessibility.</p><br />
           <p>Just 800 meters away from Sanjivani College of Engineering – a quick walk for students.</p><br />
           <p>Only 2 kilometers from the bus stand, making travel hassle-free.</p><br />
