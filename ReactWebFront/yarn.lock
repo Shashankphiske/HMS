@@ -8387,6 +8387,7 @@ react@*, "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 |
     "@headlessui/react" "^2.1.10"
     "@heroicons/react" "^2.1.5"
     "@popperjs/core" "^2.11.8"
+    aos "^2.3.4"
     axios "^1.7.9"
     bootstrap "^5.3.3"
     bootstrap-icons "^1.11.3"
