@@ -35,7 +35,7 @@ const AdminPanel = () => {
   };
 
   return (
-    <div className="container mx-auto p-8 lg:mt-20">
+    <div className="font-serif container mx-auto p-8 lg:mt-20">
       <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Hostel Admin Panel</h1>
 
       {/* Total Rent and Occupied Beds */}
