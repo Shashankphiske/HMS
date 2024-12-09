@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthContext";  // Import useAuth to update login state
 
-const Login = () => {
+const TenantLogin = () => {
   const { setIsLoggedIn } = useAuth(); // Access setIsLoggedIn from AuthContext
   const [email, setEmail] = useState(""); // State to store email input
   const [password, setPassword] = useState(""); // State to store password input
@@ -21,11 +21,11 @@ const Login = () => {
         password,
       });
 
-      // If login is successful, update the login state and navigate to the admin panel
+      // If login is successful, update the login state and navigate to the admission form
       if (response.data.success) {
         alert(response.data.message); // Show success message
         setIsLoggedIn(true);  // Update login state to true
-        navigate("/admin");  // Redirect to admin panel
+        navigate("/admission-form");  // Redirect to admission form
       }
     } catch (error) {
       // Show error message if login fails
@@ -85,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default TenantLogin;

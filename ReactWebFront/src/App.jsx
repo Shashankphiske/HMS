@@ -9,6 +9,9 @@ import Login from "./components/new/Login";
 import { AuthProvider } from "./components/new/AuthContext";
 import ProtectedRoute from "./components/new/ProtectedRoute";  // Import the provider
 import VideoSection from "./components/VideoSection";
+import AdmissionForm from "./components/AdmissionForm";
+import PrivateRoute from "./components/new/PrivateRoute";
+import TenantLogin from "./components/new/TenantLogin";
  // Import ProtectedRoute
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="/inquiry-form" element={<InquiryPage />}/>
+            <Route path="/tenant-login" element={<TenantLogin />} />
+            <Route path="/admission-form" element={<AdmissionForm />} />
           </Routes>
         </Router>
       </div>

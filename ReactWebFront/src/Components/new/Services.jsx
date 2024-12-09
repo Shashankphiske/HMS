@@ -12,7 +12,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="font-serif w-full lg:h-screen ml-40 md:ml-0 pb-10 pt-5 md:pb-10 md:h-[400px] lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
+    <div className="font-serif w-full lg:h-screen ml-40 md:ml-0 lg:ml-0 pb-10 pt-5 md:pb-10 md:h-[400px] lg:grid md:grid lg:grid-cols-2 flex flex-col items-center">
       <div 
         className="col-start-2 justify-items-center row-start-1 md:mr-14"
         data-aos="fade-up"

@@ -1,27 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { HiSortAscending, HiSortDescending } from "react-icons/hi"; // Add icons for sorting
+import { HiSortAscending, HiSortDescending } from "react-icons/hi";
+import axios from "axios";
 
 const AdminPanel = () => {
   const [students, setStudents] = useState([]);
   const [totalRent, setTotalRent] = useState(0);
   const [occupiedBeds, setOccupiedBeds] = useState(0);
-  const [sortOrder, setSortOrder] = useState("asc"); // State to handle sorting
+  const [sortOrder, setSortOrder] = useState("asc");
+
+  const fixedRent = 2000; // Define the fixed rent for each student
 
   useEffect(() => {
-    // Mock Data for Testing
-    const fetchedStudents = [
-      { id: 1, name: "John Doe", rent: 5000, bed: "A1" },
-      { id: 2, name: "Jane Smith", rent: 6000, bed: "B2" },
-      { id: 3, name: "Alice Johnson", rent: 4500, bed: "C3" },
-      { id: 4, name: "Bob Brown", rent: 5500, bed: "D4" },
-    ];
+    const fetchStudents = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/api/students");
+        setStudents(response.data);
 
-    setStudents(fetchedStudents);
-    setTotalRent(fetchedStudents.reduce((total, student) => total + student.rent, 0));
-    setOccupiedBeds(fetchedStudents.length);
+        // Calculate total rent and occupied beds
+        setTotalRent(response.data.length * fixedRent);
+        setOccupiedBeds(response.data.length);
+      } catch (error) {
+        console.error("Error fetching data from server:", error);
+      }
+    };
+
+    fetchStudents();
   }, []);
 
-  // Sort students by name or rent based on the order
   const sortStudents = (key) => {
     const sorted = [...students].sort((a, b) => {
       if (sortOrder === "asc") {
@@ -36,10 +41,10 @@ const AdminPanel = () => {
 
   return (
     <div className="font-serif container mx-auto p-8 lg:mt-20">
-      <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Hostel Admin Panel</h1>
+      <h1 className="text-5xl text-center text-amber-950 mb-6">Hostel Admin Panel</h1>
 
-      {/* Total Rent and Occupied Beds */}
-      <div className="grid grid-cols-2 gap-6 mb-6">
+      {/* Cards for Total Rent and Occupied Beds */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
         <div className="bg-white p-4 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold">Total Rent Collected</h2>
           <p className="text-2xl text-gray-700">₹{totalRent}</p>
@@ -57,7 +62,7 @@ const AdminPanel = () => {
           <tr>
             <th
               className="px-4 py-2 text-left cursor-pointer"
-              onClick={() => sortStudents("name")}
+              onClick={() => sortStudents("firstname")}
             >
               Name{" "}
               {sortOrder === "asc" ? (
@@ -66,26 +71,24 @@ const AdminPanel = () => {
                 <HiSortDescending className="inline ml-1" />
               )}
             </th>
-            <th
-              className="px-4 py-2 text-left cursor-pointer"
-              onClick={() => sortStudents("rent")}
-            >
-              Rent{" "}
-              {sortOrder === "asc" ? (
-                <HiSortAscending className="inline ml-1" />
-              ) : (
-                <HiSortDescending className="inline ml-1" />
-              )}
-            </th>
-            <th className="px-4 py-2 text-left">Bed</th>
+            <th className="px-4 py-2 text-left">Contact</th>
+            <th className="px-4 py-2 text-left">Email</th>
+            <th className="px-4 py-2 text-left">Address</th>
+            <th className="px-4 py-2 text-left">Parent Info</th>
           </tr>
         </thead>
         <tbody>
-          {students.map((student) => (
-            <tr key={student.id} className="border-t hover:bg-gray-50">
-              <td className="px-4 py-2">{student.name}</td>
-              <td className="px-4 py-2">{student.rent}</td>
-              <td className="px-4 py-2">{student.bed}</td>
+          {students.map((student, index) => (
+            <tr key={index} className="border-t hover:bg-gray-50">
+              <td className="px-4 py-2">
+                {student.firstname} {student.lastname} {student.middlename}
+              </td>
+              <td className="px-4 py-2">{student.contact}</td>
+              <td className="px-4 py-2">{student.email}</td>
+              <td className="px-4 py-2">{student.address}</td>
+              <td className="px-4 py-2">
+                {student.parentFirstname} ({student.parentAge}), {student.parentOccupation}
+              </td>
             </tr>
           ))}
         </tbody>

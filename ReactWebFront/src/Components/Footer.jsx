@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import img from '../assets/images/Hostelimg.png';
+import { Link } from "react-router-dom";
 
 function Footer() {
     const gradientRef = useRef(null);
@@ -52,8 +53,8 @@ function Footer() {
                     </div>
                     <div className="formlink flex flex-col gap-5 w-full">
                         <h1 className="font-bold text-xl">Form Link :</h1>
-                        <p>Admission Form</p>
-                        <p>Inquiry Form</p>
+                        <Link to='/tenant-login'>Tenant Login</Link>
+                        <Link to='inquiry-form'>Inquiry Form</Link>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ require('dotenv').config()
 app.use(express.json());
 
 const corsOptions = {
-  origin : "http://localhost:5173",
+  origin : "http://localhost:5177",
   methods:"GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 }
@@ -152,6 +152,67 @@ app.post('/submit-admission', async (req, res) => {
     }
   });
 
+  app.post("/login", async (req, res) => {
+    const { email, password } = req.body;
+  
+    try {
+      const response = await sheets.spreadsheets.values.get({
+        spreadsheetId: "1SDVzzxCudxheOTF3xbWlFyTK1IC0d9RHSip0kViy9oU",
+        range: "Sheet1!A:B", // Assuming Email is in column A and Password is in column B
+      });
+  
+      const rows = response.data.values || [];
+  
+      // Check if email and password match
+      const isValidUser = rows.some(
+        (row) => row[0] === email && row[1] === password
+      );
+  
+      if (isValidUser) {
+        res.status(200).send({ success: true, message: "Login successful!" });
+      } else {
+        res.status(401).send({ success: false, message: "Invalid credentials" });
+      }
+    } catch (error) {
+      console.error(error);
+      res.status(500).send({ success: false, message: "Server error" });
+    }
+  });
+
+  app.get("/api/students", async (req, res) => {
+    try {
+      const response = await sheets.spreadsheets.values.get({
+        spreadsheetId: "1jByBDyvOBjsMljRPS1b0dSNNx2g9l-rHv5xqWUpLgiY",
+        range: "Sheet1!A2:L", // Adjust the range based on your spreadsheet structure
+      });
+  
+      const rows = response.data.values;
+  
+      if (!rows || rows.length === 0) {
+        return res.status(404).json({ message: "No data found in the sheet." });
+      }
+  
+      // Map rows to structured data
+      const students = rows.map((row) => ({ // Add an ID column in the sheet or generate one
+        firstname: row[0],
+        middlename: row[1],
+        lastname: row[2],
+        address: row[3],
+        aadhar: row[4],
+        age: row[5],
+        contact: row[6],
+        email: row[7],
+        parentFirstname: row[8],
+        parentAge: row[9],
+        parentOccupation: row[10],
+      }));
+  
+      res.json(students);
+    } catch (error) {
+      console.error("Error fetching data from Google Sheets:", error);
+      res.status(500).json({ message: "Internal Server Error" });
+    }
+  });
 
 // Start the server
 const PORT = 3000;
