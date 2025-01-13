@@ -16,7 +16,7 @@ const TenantLogin = () => {
 
     try {
       // Make a POST request to the login endpoint
-      const response = await axios.post("http://localhost:3000/login", {
+      const response = await axios.post("http://localhost:3000/tenantlogin", {
         email,
         password,
       });

@@ -37,9 +37,9 @@ function Aboutus() {
                         className="w-32 h-32 rounded-full object-cover"
                     />
                     <div className="text-gray-700">
-                        <p className="font-semibold">John Doe</p>
+                        <p className="font-semibold">Yogesh Digambar Sonawane</p>
                         <p>
-                            John is a dedicated and experienced property owner, passionate about providing quality living spaces for students. He has been managing properties for over 10 years, ensuring that residents enjoy a comfortable and safe environment.
+                            Yogesh Digambar Sonawane is a dedicated and experienced property owner, passionate about providing quality living spaces for students. He has been managing properties for over 10 years, ensuring that residents enjoy a comfortable and safe environment.
                         </p>
                     </div>
                 </div>
